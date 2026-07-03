@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Niespodzianka dla Karcii ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- EKRAN STARTOWY -->
+<div id="startScreen" class="start-screen">
+    <h1>❤️ Niespodzianka dla Karcii ❤️</h1>
+    <button onclick="openSite()">Otwórz dedykację</button>
+</div>
+
+<!-- GŁÓWNA STRONA -->
+<div id="mainContent" class="hidden">
+
+    <header>
+        <h1>💖 Dla Karcii 💖</h1>
+        <p class="subtitle">Coś specjalnego tylko dla Ciebie</p>
+    </header>
+
+    <section class="card">
+        <h2>💌 List</h2>
+        <p>
+            Tu wpisz swój list miłosny...<br><br>
+            „Możesz dodać swoje cytaty tutaj” ❤️<br>
+            „Kolejny cytat...” ❤️
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>⏳ Jesteśmy razem od</h2>
+        <p id="counter">Ładowanie...</p>
+    </section>
+
+    <section class="card">
+        <h2>🎵 Muzyka</h2>
+        <button onclick="playMusic()">▶ Odtwórz / Pauza</button>
+        <audio id="music">
+            <source src="muzyka.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+
+    <section class="card">
+        <h2>🖼️ Galeria</h2>
+        <div class="gallery">
+            <img src="zdjecie1.jpg">
+            <img src="zdjecie2.jpg">
+            <img src="zdjecie3.jpg">
+            <img src="zdjecie4.jpg">
+            <img src="zdjecie5.jpg">
+        </div>
+    </section>
+
+    <footer>
+        ❤️ Stworzone specjalnie dla Karcii ❤️
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
