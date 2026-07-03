@@ -3,7 +3,6 @@ function openSite(){
     document.getElementById("mainContent").classList.remove("hidden");
 }
 
-/* MUZYKA */
 function playMusic(){
     let music = document.getElementById("music");
     if(music.paused){
@@ -13,7 +12,6 @@ function playMusic(){
     }
 }
 
-/* LICZNIK */
 const startDate = new Date("2026-02-22");
 
 function updateCounter(){
@@ -29,7 +27,6 @@ function updateCounter(){
 setInterval(updateCounter, 1000);
 updateCounter();
 
-/* SERDUSZKA W TLE */
 setInterval(() => {
     let heart = document.createElement("div");
     heart.innerHTML = "❤️";
@@ -43,7 +40,6 @@ setInterval(() => {
     setTimeout(()=>heart.remove(),4000);
 },500);
 
-/* animacja CSS dynamicznie */
 const style = document.createElement("style");
 style.innerHTML = `
 @keyframes fall {
